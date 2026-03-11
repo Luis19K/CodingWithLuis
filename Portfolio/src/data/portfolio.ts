@@ -57,12 +57,12 @@ export interface Project {
 
 export const projects: Project[] = [
   {
-    title: "NeuralChat",
+    title: "Business Manager Pro",
     description:
-      "Real-time AI chatbot platform with multi-model support and custom fine-tuning capabilities.",
+      "A comprehensive business management solution with automatic insights for business understanding.",
     longDescription:
-      "Built a production-ready AI chat platform supporting GPT-4, Claude, and custom fine-tuned models. Features real-time streaming, conversation branching, and a plugin system.",
-    tech: ["React", "Python", "FastAPI", "WebSocket", "PostgreSQL", "Redis"],
+      "Designed with interactive dashboards displaying key business metrics and financial trends. It also includes database management with SQL and JSON to export/import capabilities for data portability..",
+    tech: ["Python", "PostgreSQL", "JSON"],
     github: personalInfo.github,
     demo: personalInfo.github,
     category: "Full Stack",
@@ -70,25 +70,25 @@ export const projects: Project[] = [
     gradient: "from-violet-500/20 to-purple-500/20",
   },
   {
-    title: "CloudSync",
+    title: "Car Dyno",
     description:
-      "Distributed file synchronization engine with conflict resolution and end-to-end encryption.",
+      "A car dynamometer system for capturing and analyzing motor telemetry.",
     longDescription:
-      "Engineered a peer-to-peer file sync system using CRDTs for conflict resolution. Supports real-time collaboration with E2E encryption.",
-    tech: ["Go", "gRPC", "AWS S3", "React", "WebRTC"],
+      "Engineered a Car dynamometer system that captures motor telemetry from an Arduino sensor and presents it in a browser dashboard for calibration, live monitoring, and post-run analysis.",
+    tech: ["Arduino", "React", "Node.js"],
     github: personalInfo.github,
     demo: personalInfo.github,
-    category: "Backend",
+    category: "Full Stack",
     featured: true,
     gradient: "from-cyan-500/20 to-blue-500/20",
   },
   {
-    title: "PixelForge",
+    title: "TimingApp",
     description:
-      "Browser-based 3D model editor with real-time collaboration and AI-assisted modeling.",
+      "A time tracking and management application for professionals.",
     longDescription:
-      "Created a Three.js-powered 3D editor with multiplayer support via WebSocket. Integrated AI-assisted mesh generation using stable diffusion.",
-    tech: ["Three.js", "React", "TypeScript", "Node.js", "Socket.io"],
+      "Python desktop app with accounts system that tracks employees clock-ins/outs, compute pay-period totals, and manages session records with an embedded SQLite database.",
+    tech: ["Python", "SQLite", "Tkinter"],
     github: personalInfo.github,
     demo: personalInfo.github,
     category: "Frontend",
@@ -96,12 +96,12 @@ export const projects: Project[] = [
     gradient: "from-pink-500/20 to-rose-500/20",
   },
   {
-    title: "DeployPilot",
+    title: "Topobot",
     description:
-      "One-click deployment platform for containerized applications with auto-scaling and monitoring.",
+      "A full-stack robotics project integrating hardware, embedded firmware, Linux services, Python backend, and a cross‑platform mobile app.",
     longDescription:
-      "Built a PaaS solution that automates Docker builds, Kubernetes deployments, and monitoring setup. Features GitHub integration and rollback capabilities.",
-    tech: ["Go", "Docker", "Kubernetes", "React", "Prometheus"],
+      "Full-stack robotics project integrating hardware, embedded firmware, Linux services, Python backend, and a cross‑platform mobile app. The system runs on a Raspberry Pi (camera, Bluetooth/Wi‑Fi) and two Arduinos (motor control + sensor/head control). It supports teleoperation via Bluetooth/Wi‑Fi, live camera streaming, obstacle detection (multiple HC‑SR04 sensors), encoder‑based motor feedback, ESC motor control, servo‑driven sensor mounts, and a mobile UI for driving and diagnostics.",
+    tech: ["Arduino", "C++", "Linux", "React Native", "TypeScript"],
     github: personalInfo.github,
     demo: personalInfo.github,
     category: "DevOps",
@@ -109,30 +109,17 @@ export const projects: Project[] = [
     gradient: "from-amber-500/20 to-orange-500/20",
   },
   {
-    title: "SentimentScope",
+    title: "TimeTrack",
     description:
       "Real-time social media sentiment analysis dashboard with ML-powered trend prediction.",
     longDescription:
-      "Developed a sentiment analysis pipeline processing 10K+ tweets/min using a custom BERT model. Features interactive dashboards and anomaly alerts.",
-    tech: ["Python", "PyTorch", "FastAPI", "React", "Apache Kafka"],
+      "Designed and implemented a PyQt5 desktop application for RC Race Timing, integrating real-time Arduino serial input and live display.",
+    tech: ["Python", "JSON", "C++"],
     github: personalInfo.github,
     demo: personalInfo.github,
     category: "AI/ML",
     featured: false,
     gradient: "from-emerald-500/20 to-teal-500/20",
-  },
-  {
-    title: "CodeArena",
-    description:
-      "Competitive programming platform with real-time battles, AI-powered hints, and skill tracking.",
-    longDescription:
-      "Built a competitive coding platform supporting 15+ languages with sandboxed execution. Features ELO ranking, live battles, and AI-generated hints.",
-    tech: ["Next.js", "TypeScript", "Rust", "Docker", "PostgreSQL"],
-    github: personalInfo.github,
-    demo: personalInfo.github,
-    category: "Full Stack",
-    featured: true,
-    gradient: "from-indigo-500/20 to-violet-500/20",
   },
 ];
 
@@ -153,42 +140,7 @@ export const experience: ExperienceItem[] = [
     description:
       "Developed internal tools for the infrastructure team, optimizing deployment pipelines and reducing build times by 40%. Built React dashboards consumed by 500+ engineers.",
     type: "work",
-    tech: ["React", "Python", "GraphQL"],
-  },
-  {
-    title: "Open Source Contributor",
-    company: "Various Projects",
-    date: "Jan 2025 — Present",
-    description:
-      "Active contributor to major open-source projects including Next.js and TensorFlow. Submitted 20+ PRs with features and bug fixes merged into production.",
-    type: "work",
-    tech: ["TypeScript", "Python", "Go"],
-  },
-  {
-    title: "B.S. Computer Science",
-    company: "Stanford University",
-    date: "Sep 2023 — Jun 2027",
-    description:
-      "Focusing on AI/ML and Systems. Dean's List every quarter. Teaching Assistant for CS 106B (Data Structures) and CS 229 (Machine Learning).",
-    type: "education",
-  },
-  {
-    title: "Research Assistant",
-    company: "Stanford AI Lab",
-    date: "Sep 2024 — Present",
-    description:
-      "Conducting research on efficient transformer architectures for edge deployment. Co-authored a paper on model compression techniques submitted to NeurIPS.",
-    type: "work",
-    tech: ["Python", "PyTorch", "CUDA"],
-  },
-  {
-    title: "Hackathon Champion",
-    company: "TreeHacks 2025",
-    date: "Feb 2025",
-    description:
-      "Won first place out of 200+ teams with NeuralChat, an AI-powered accessibility tool. Built in 36 hours with a team of 4.",
-    type: "work",
-    tech: ["React", "Python", "GPT-4"],
+    tech: ["React", "Python", "C++", "Arduino", "Linux", "SQLite", "PyQt5", "TypeScript", "React Native", "JSON", "PostgreSQL", "Git", "Docker"],
   },
 ];
 
